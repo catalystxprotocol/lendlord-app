@@ -1,0 +1,42 @@
+.ant-picker {
+    font-family: Inter-Regular;
+}
+
+.ant-picker-dropdown {
+    z-index: 1 !important;
+    font-family: Inter-Regular;
+
+    .ant-picker-cell {
+        // 日期组件表格中的div 垂直居中
+        vertical-align: middle;
+    }
+}
+
+.ant-picker-time-panel-column {
+    // 更改日期组件中的时间选择,滚动条样式
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 28px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(255, 159, 42, 0.35);
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+        background: rgba(255, 159, 42, 0.35);
+    }
+
+    scrollbar-color: rgba(255, 159, 42, 0.35) transparent;
+    scrollbar-width: thin;
+
+    .ant-picker-time-panel-cell-inner {
+        padding: 0 0 0 18px !important;
+    }
+}

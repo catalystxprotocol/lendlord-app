@@ -1,0 +1,112 @@
+@import url('./reset.css');
+@import url('./variable.less');
+@import url('./override.toastification.less');
+@import url('./override.element.less');
+@import url('./override.ant.less');
+
+:root {
+    --bj-primary-color: rgba(255, 159, 42, 1); // 主色
+    --bj-hover-color: rgba(255, 179, 86, 1); // 主按钮高亮颜色
+    --bj-disable-color: rgba(188, 178, 160, 0.5); // 主按钮灰禁颜色
+    --bj-background-color: rgba(250, 250, 249, 1); // 背景色
+    --bj-background-color-second: rgba(188, 188, 160, 0.1); // 页脚/搜索框/功能按钮 背景色
+    --bj-background-color-third: rgba(188, 178, 160, 0.1); // 筛选器及搜索框 背景色
+    --bj-background-color-fourth: rgba(188, 178, 160, 0.15); // 钱包下拉菜单内icon背景色
+    --bj-background-color-fifth: rgba(188, 178, 160, 0.2); // loading
+    --bj-background-color-card: rgba(255, 255, 255, 1); // 卡片背景色
+    --bj-background-popover-light: rgba(255, 255, 255, 0.1); // 弹窗高亮背景色
+    --bj-background-button-light: rgba(255, 255, 255, 0.35); // 按钮边框高亮
+    --bj-background-tooltip-light: rgba(255, 255, 255, 0.75); // tooltip 背景色
+    --bj-divider-color: rgba(0, 0, 0, 1); // 分割线颜色
+    --bj-text-title: rgba(0, 0, 0, 1); // 标题/粗体字色
+    --bj-text-normal: rgba(0, 0, 0, 0.8); // 正文文字颜色
+    --bj-text-second: rgba(0, 0, 0, 0.5); // 次级文字颜色
+    --bj-text-third: rgba(0, 0, 0, 0.3); // 最次级文字颜色
+    --bj-text-fouth: rgba(0, 0, 0, 0.65); // 404 500 comingSoon
+    --bj-text-fifth: rgba(0, 0, 0, 0.05); // 切换链error bg
+    --bj-box-shadow-card: 0px 16px 20px 0px rgba(35, 27, 24, 0.03); // 卡片阴影
+    --bj-box-shadow-second: 0px 2px 10px 1px rgba(35, 27, 24, 0.05); // 弹窗/下拉菜单阴影
+    --bj-box-shadow-third: 0px 2px 10px 1px rgba(35, 27, 24, 0.1); // 弹窗/下拉菜单阴影
+    --bj-border-color: rgba(0, 0, 0, 0.1); // 筛选器及搜索框 边框
+    --border-radius-normal: 8px; // 圆角边框
+    --border-radius-second: 16px; // 卡片输入框圆角边框
+    --bj-font-size-normal: 14px; // 小正文字号
+    --bj-font-size-text: 18px; // 正文字号
+    --bj-font-size-title: 38px; // 一级标题字号
+    --bj-font-size-sub-title: 28px; // 二级标题字号
+    --bj-font-size-max-title: 78px; // Max 标题
+    --bg-text-addr: rgba(232, 138, 24, 1);
+}
+
+// 此字体可设置字重
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    src: url('../assets/font/Inter.woff2') format('woff2'),
+        url('../assets/font/Inter.ttf') format('truetype');
+}
+// 和蓝湖保持一致，方便后续写css
+@font-face {
+    font-weight: 400;
+    font-display: swap;
+    font-family: Inter-Regular;
+    src: url('../assets/font/Inter.woff2') format('woff2'),
+        url('../assets/font/Inter.ttf') format('truetype');
+}
+
+@font-face {
+    font-weight: 600;
+    font-display: swap;
+    font-family: 'Inter-Regular_Semi-Bold';
+    src: url('../assets/font/Inter.woff2') format('woff2'),
+        url('../assets/font/Inter.ttf') format('truetype');
+}
+
+@font-face {
+    font-weight: 700;
+    font-display: swap;
+    font-family: 'Inter-Regular_Bold';
+    src: url('../assets/font/Inter.woff2') format('woff2'),
+        url('../assets/font/Inter.ttf') format('truetype');
+}
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: var(--bj-text-normal);
+    font-size: var(--bj-font-size-normal);
+    font-family: Inter-Regular, Avenir, Helvetica, Arial, sans-serif;
+    background-color: var(--bj-background-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scrollbar-color: transparent transparent; // 火狐去除滚动条样式
+
+    // 更改进度条颜色
+    #nprogress {
+        .bar {
+            background: var(--bj-primary-color);
+
+            .peg {
+                box-shadow: 0 0 10px var(--bj-primary-color), 0 0 5px var(--bj-primary-color);
+            }
+        }
+    }
+}
+
+body::-webkit-scrollbar {
+    display: none; // 去除滚动条样式
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}

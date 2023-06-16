@@ -1,0 +1,166 @@
+// 使用Inter-Regular_Bold 字体使用此类名，因自定义字体需要时间加载，未加载之前 如果未添加 font-weight: 700; 会导致展示的字体细，后续加载好自定义字体文件，字体变粗，变化较大，观感差
+.Inter-Regular_Bold {
+    font-weight: 700;
+    font-family: 'Inter-Regular_Bold';
+}
+
+// 同上
+.Inter-Regular_Semi-Bold {
+    font-weight: 600;
+    font-family: 'Inter-Regular_Semi-Bold';
+}
+
+// Max 标题（首屏）
+.max_font {
+    .Inter-Regular_Semi-Bold;
+
+    color: var(--bj-text-title);
+    font-size: var(--bj-font-size-max-title);
+    line-height: 96px;
+    letter-spacing: -1.81px;
+}
+// 一级标题
+.title_font {
+    .Inter-Regular_Semi-Bold;
+
+    color: var(--bj-text-title);
+    font-size: var(--bj-font-size-title);
+    line-height: 46px;
+    letter-spacing: -0.5px;
+}
+// 二级标题
+.sub_title_font {
+    .Inter-Regular_Semi-Bold;
+
+    color: var(--bj-text-title);
+    font-size: var(--bj-font-size-sub-title);
+    line-height: 34px;
+    letter-spacing: -0.8px;
+}
+// 正文
+.text_font {
+    color: var(--bj-text-normal);
+    font-weight: 400;
+    font-size: var(--bj-font-size-text);
+    font-family: Inter-Regular;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+}
+// 正文加粗
+.text_font_bold {
+    .text_font;
+    .Inter-Regular_Semi-Bold;
+
+    color: var(--bj-text-title);
+}
+// 小正文
+.small_text_font {
+    color: var(--bj-text-normal);
+    font-weight: 400;
+    font-size: var(--bj-font-size-normal);
+    font-family: Inter-Regular;
+    line-height: 18px;
+    letter-spacing: -0.16px;
+}
+// 小正文加粗
+.small_text_font_bold {
+    .small_text_font;
+    .Inter-Regular_Semi-Bold;
+
+    color: var(--bj-text-title);
+}
+
+// 卡片容器样式
+.card_container {
+    background: var(--bj-background-color-card);
+    border-radius: var(--border-radius-second);
+    box-shadow: var(--bj-box-shadow-card);
+}
+
+// 弹窗/下拉菜单容器样式
+.select_container {
+    background: var(--bj-background-color-card);
+    border-radius: var(--border-radius-normal);
+    box-shadow: var(--bj-box-shadow-second);
+}
+
+// 主按钮容器样式
+.button_container {
+    background: var(--bj-primary-color);
+    border-radius: var(--border-radius-normal);
+}
+// 高亮
+.hover_button {
+    background: var(--bj-hover-color);
+    border: 3px solid rgba(255, 255, 255, 0.35);
+    border-radius: var(--border-radius-normal);
+}
+// 禁用
+.disable_button {
+    background: var(--bj-disable-color);
+    border-radius: var(--border-radius-normal);
+}
+
+// 幽灵按钮
+.ghost_button {
+    border: 2px solid var(--bj-primary-color);
+    border-radius: var(--border-radius-normal);
+}
+// 高亮
+.ghost_hover_button {
+    background: rgba(255, 159, 42, 0.1);
+    border: 2px solid var(--bj-primary-color);
+    border-radius: var(--border-radius-normal);
+}
+
+// 筛选器及搜索框
+.filters_and_search_boxes {
+    background: var(--bj-background-color-third);
+    border: 1px solid var(--bj-border-color);
+    border-radius: var(--border-radius-normal);
+}
+
+// 筛选器及搜索框
+.hover_filters_and_search_boxes {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--bj-primary-color);
+    border-radius: var(--border-radius-normal);
+}
+
+// 输入框容器样式
+.input_container {
+    background: var(--bj-background-color-third);
+    border: 1px solid var(--bj-border-color);
+    border-radius: var(--border-radius-second);
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.text_ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.button_box:hover {
+    box-sizing: border-box;
+    background: var(--bj-hover-color);
+    border: 3px solid var(--bj-background-button-light);
+}
+
+.slef_el_dropdown__popper {
+    margin-top: -8px;
+    padding: 8px 0;
+    background: #ffffff;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0 2px 10px 1px rgba(35, 27, 24, 0.05);
+}
+
+.table_cursor {
+    .cursor_pointer;
+
+    color: var(--bg-text-addr);
+}

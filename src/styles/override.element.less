@@ -1,0 +1,144 @@
+// 复制提示
+.copy_popper.el-popper.is-light {
+    width: auto;
+    min-width: auto;
+    padding: 7px 12px;
+    background: var(--bj-background-color-card);
+    border: none;
+    border-radius: var(--border-radius-normal);
+    box-shadow: var(--bj-box-shadow-card);
+    .small_text_font;
+}
+
+// Profile  tab 切换
+.slef_tabs {
+    .el-tabs__header {
+        margin-bottom: 0;
+
+        .el-tabs__active-bar {
+            height: 3px;
+            background-color: var(--bj-primary-color);
+            border-radius: 3px;
+        }
+
+        .el-tabs__item {
+            .sub_title_font;
+
+            height: auto;
+            padding: 16px 30px;
+            color: rgba(0, 0, 0, 0.35);
+
+            // label中数字的样式
+            .item_number {
+                .text_font;
+
+                display: inline-block;
+                margin-left: 9px;
+                color: rgba(0, 0, 0, 0.35);
+                letter-spacing: 0;
+                transform: translateY(-3px);
+            }
+        }
+
+        .is-active {
+            color: var(--bj-text-title);
+
+            .item_number {
+                color: var(--bj-text-normal);
+            }
+        }
+    }
+}
+
+// 去除下拉框的箭头
+.el-dropdown__popper {
+    .el-popper__arrow {
+        display: none;
+    }
+}
+
+// element 弹窗样式
+.el-dialog {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+// element ui dialog 样式
+.el-dialog__header {
+    padding: 0;
+}
+
+.gradient .el-dialog__body {
+    background: linear-gradient(180deg, #fff6ee 0%, #ffffff 50%);
+    box-shadow: 0 16px 20px 0 var(--bj-box-shadow-second);
+}
+
+.el-dialog__body {
+    padding: 0;
+}
+
+.el-dialog__footer {
+    padding: 0;
+}
+
+.el-tooltip__trigger:focus-visible {
+    outline: none;
+}
+
+// element 竖向滚动条
+div.el-scrollbar__bar.is-vertical {
+    width: 4px;
+    background: var(--bj-background-color-third);
+    border-radius: 2px;
+    opacity: 1;
+
+    .el-scrollbar__thumb,
+    .el-scrollbar__thumb:hover {
+        background: rgba(255, 159, 42, 0.35);
+        border-radius: 2px;
+        opacity: 1;
+    }
+}
+
+// el-dropdown popper-class
+.chain_menu.el-dropdown__popper {
+    padding: 8px 0;
+    border: none;
+    border-radius: 9px !important;
+    box-shadow: 0 16px 20px 0 rgba(35, 27, 24, 0.12) !important;
+}
+
+// el-dropdown popper-class
+.wallet_menu {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px 1px rgba(35, 27, 24, 0.05) !important;
+
+    ul {
+        padding: 8px 0 !important;
+    }
+}
+
+// el-tooltip popper-class
+.box-item {
+    color: var(--bj-text-normal);
+    font-weight: 400;
+    font-size: 10px;
+    font-family: Inter-Regular, Inter;
+    line-height: 14px;
+    background: var(--bj-background-tooltip-light) !important;
+    border: 1px solid var(--bj-background-color-fourth) !important;
+    border-radius: 4px !important;
+    backdrop-filter: blur(2px) !important;
+}
+
+.slef_collapse {
+    // 折叠
+    .collapse-transition {
+        transition: 0.2s height ease-in, 0.2s padding-top ease-in, 0.2s padding-bottom ease-in;
+    }
+
+    .el-collapse-transition-leave-active,
+    .el-collapse-transition-enter-active {
+        transition: 0.2s max-height ease-in, 0.2s padding-top ease-in, 0.2s padding-bottom ease-in;
+    }
+}
