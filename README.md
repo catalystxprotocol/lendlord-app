@@ -4,27 +4,21 @@ lendlord app
 
 ## development
 
-step1 安装依赖
+step1 install
 
 ```
   pnpm install
 ```
 
-step2 服务启动, 后端服务地址可修改.env.development
+step2 start
 
 ```
   pnpm dev
 ```
 
-step3 preview
+## build
 
-```
-  pnpm preview
-```
-
-## qa
-
-step1 安装依赖
+step1 install
 
 ```
   pnpm install
@@ -33,5 +27,5 @@ step1 安装依赖
 step2 build
 
 ```
-  pnpm build:qa
+  pnpm build
 ```
