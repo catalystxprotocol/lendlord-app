@@ -4,10 +4,8 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "vite",
-    "qa": "vite --mode qa",
+    "build": "vue-tsc --noEmit && vite build",
     "vue:tsc": "vue-tsc --noEmit",
-    "build:dev": "vue-tsc --noEmit && vite build --mode development",
-    "build:qa": "vue-tsc --noEmit && vite build --mode qa",
     "preview": "vite preview",
     "commit": "git-cz",
     "prepare": "husky install",
